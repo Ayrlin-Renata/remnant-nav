@@ -1,0 +1,101 @@
+html, body {
+	min-height: 100vh;
+	font-family: 'Dosis', sans-serif;
+	/* NOTE REMOVE LATER
+	font-family: 'Alegreya Sans SC', sans-serif;
+	*/
+}
+
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to { 
+		transform: rotate(360deg);
+	}
+}
+@keyframes bounce {
+	76% {	transform: translateY(0vh);	}
+	79%	{	transform: translateY(1vh);	}
+	82%	{	transform: translateY(0vh);	}
+	89% {	transform: translateY(0vh);	}
+	92%	{	transform: translateY(1vh);	}
+	95%	{	transform: translateY(0vh);	}
+}
+
+#title-panel {
+	background-image: url('../img/back.png');
+	margin: 0px;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	padding-top: 30vh;
+	overflow: hidden;
+}
+#title-graphics {
+	margin-top: -30vh;
+	margin-bottom: -70vh;
+	overflow: hidden;
+}
+#tgraph-cerise {
+	width: 100vw;
+	height: 100vh;
+	transform: translate(-100vw);
+	transition: transform 2.2s ease;
+}
+#title-text {
+	transform: translateX(0vw);
+	font-size: 15vh;
+	font-family: 'Palanquin', sans-serif;
+}
+#title-subtext {
+	margin-top: -4vh;
+	font-size: 5vh;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+#title-loading {
+	font-size: 3vh;
+}
+#tload-text {
+	margin-top: 3vh;
+	opacity: 1;
+}
+#tload-vershenna, #tload-cinder, #tload-romyshlen {
+	transform: translateX(0vw);
+	transition: transform 2.2s ease;
+}
+#tload-vershenna {
+	margin-top: 3vh;
+	width: 8vh;
+	height: 8vh;
+	animation: rotate 2.5s infinite linear;
+}
+#tload-cinder {
+	margin-top: -13.4vh;
+	width: 4vh;
+	height: 4vh;
+	animation: rotate 10s infinite linear;
+}
+#tload-romyshlen {
+	margin-top: -22.5vh;
+	width: 12vh;
+	height: 12vh;
+	animation: rotate 20s infinite linear;
+}
+#title-arrow {
+	margin-top: 4vh;
+}
+#tarrow-down {
+	opacity: 0;
+	transition: opacity 2s ease-in;
+	animation: bounce 4s infinite linear;
+}
