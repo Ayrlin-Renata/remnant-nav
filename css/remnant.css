@@ -49,8 +49,9 @@ html, body {
 #tgraph-cerise {
 	width: 100vw;
 	height: 100vh;
-	transform: translate(-100vw);
-	transition: transform 2.2s ease;
+	transform: translate(-70vw);
+	transition: all 2.2s ease;
+	opacity: 0;
 }
 #title-text {
 	transform: translateX(0vw);

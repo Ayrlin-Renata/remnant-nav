@@ -56,6 +56,7 @@ function animTitlePage() {
 	setTimeout(function() {tloadCinder.css('transform','translateX(-30vw)');},100);
 	setTimeout(function() {tloadRomyshlen.css('transform','translateX(8vw)');},300);
 	setTimeout(function() {tgraphCerise.css('transform','translateX(0vw)');},400);
+	setTimeout(function() {tgraphCerise.css('opacity',1);},400);
 	//down arrow
 	setTimeout(function() {$('#tarrow-down').css("opacity","1");},3800);
 }
