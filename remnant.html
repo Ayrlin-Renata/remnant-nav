@@ -17,26 +17,46 @@
 	<link href="css/remnant.css" rel="stylesheet">
 </head>
 <body>
-	<div id="title-panel" class="unselectable">
-		<div id="title-graphics">
-			<img id="tgraph-cerise" src="img/cerise.png">
-		</div>
-		<div id="title-text">.......</div>
-		<div id="title-subtext">&nbsp</div>
-		<div id="title-loading">
-			<img id="tload-vershenna" src="img/svg/vershenna.svg">
-			<div>
-				<img id="tload-cinder" src="img/cinder.png">
+	<div id="scroller">
+		<div id="title-panel" class="unselectable rpanel">
+			<div id="title-graphics">
+				<img id="tgraph-cerise" src="img/cerise.png">
+				<img id="tgraph-outer-belt" src="img/outer-belt.png">
 			</div>
-			<div>
-				<img id="tload-romyshlen" src="img/romyshlen.png">
+			<div id="title-text">.......</div>
+			<div id="title-subtext">&nbsp</div>
+			<div id="title-loading">
+				<div id="tlc-slate">
+					<div id="tlcs-ml-top" class="markerline ml-top"></div>
+					<div id="tlcs-ml-bot" class="markerline ml-bot"></div>
+					<img id="tload-cinder" src="img/cinder.png">
+					<div id="tlcs-label" class="ml-label">cinder</div>
+					<div id="tlcs-desc" class="ml-desc">the derelict capitol</div>
+				</div>
+				<div id="tlv-slate">
+					<div id="tlvs-ml-top" class="markerline ml-top"></div>
+					<div id="tlvs-ml-bot" class="markerline ml-bot"></div>
+					<img id="tload-vershenna" src="img/svg/vershenna.svg">
+					<div id="tlvs-label" class="ml-label">vershenna</div>
+					<div id="tlvs-desc" class="ml-desc">an unfinished paradise</div>
+				</div>
+				<div id="tlr-slate">
+					<div id="tlrs-ml-top" class="markerline ml-top"></div>
+					<div id="tlrs-ml-bot" class="markerline ml-bot"></div>
+					<img id="tload-romyshlen" src="img/romyshlen.png">
+					<div id="tlrs-label" class="ml-label">romyshlen</div>
+					<div id="tlrs-desc" class="ml-desc">a forgotten industry</div>
+				</div>
+				<div id="tload-text">Loading...</div>
 			</div>
-			<div id="tload-text">Loading...</div>
+			<div id="title-arrow">
+				<img id="tarrow-down" src="img/svg/downarrow.svg">
+			</div>
 		</div>
-		<div id="title-arrow">
-			<img id="tarrow-down" src="img/svg/downarrow.svg">
+		<script src="js/remnant.js"></script>
+		<div id="menu-panel" class="rpanel">
+			There is nothing here yet.
 		</div>
 	</div>
-	<script src="js/remnant.js"></script>
 </body>
 </html>
