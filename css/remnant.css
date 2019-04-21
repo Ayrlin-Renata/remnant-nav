@@ -24,19 +24,17 @@ html, body {
 	padding: 0px;
 	width: 4px;
 	background-color: #444444;
-	margin-left: calc(50vw - 2px);
 	opacity: 0;
 	transition: opacity 2s ease;
 }
 .ml-top {
-	margin-bottom: 0p;
+	margin-bottom: 0px;
 	height: 50px;
 }
 .ml-bot {
 	height: 100px;
 }
 .ml-label {
-	margin-left: 50vw;
 	width: fit-content;
 	margin-top:  5px;
 	margin-bottom: 0px;
@@ -45,7 +43,6 @@ html, body {
 	transition: opacity 2s ease;
 }
 .ml-desc {
-	margin-left: 50vw;
 	width: fit-content;
 	margin-top: -1vh;
 	padding-left: 15px;
@@ -115,43 +112,46 @@ html, body {
 	padding-top: 5vh;
 }
 #tload-text {
-	margin-top: 3vh;
+	margin-top: -5vh;
 	opacity: 1;
 }
 #tlc-slate, #tlv-slate, #tlr-slate {
 	margin: 0px;
 	transform: translateX(0vw);
 	transition: transform 2.2s ease;
-	
+	position: absolute;
+	width: fit-content;
 }
 /*title loading cinder*/
 #tlc-slate {
-	
+	margin-left: 50vw;
 }
 #tlcs-ml-top {
-	margin-top: calc(-70px - 0vh);
+	margin-top: 0px;
 }
 #tlcs-ml-bot {
 	margin-top: calc(40px + 4vh);
-	margin-bottom: calc(-120px - 4.7vh); 
+	margin-bottom: calc(-120px - 4vh); 
 }
 #tload-cinder {
 	width: 4vh;
 	height: 4vh;
 	animation: rotate 10s infinite linear;
+	float: left;
+	margin-left: calc(-2vh + 2px);
 }
 #tlcs-label {
 	
 }
 #tlcs-desc {
-	margin-bottom: calc(-10vh + -110px); /*-6vh + -4vh + -120px + 10px*/
+	
 }
 /*title loading vershenna*/
 #tlv-slate {
-	
+	margin-left: 50vw;
 }
 #tlvs-ml-top {
-	margin-top: calc(-70px - 6vh);
+	margin-top: -2vh;
 }
 #tlvs-ml-bot {
 	margin-top: calc(40px + 8vh);
@@ -161,19 +161,21 @@ html, body {
 	width: 8vh;
 	height: 8vh;
 	animation: rotate 2.5s infinite linear;
+	float: left;
+	margin-left: calc(-4vh + 2px);
 }
 #tlvs-label {
 	
 }
 #tlvs-desc {
-	margin-bottom: calc(-14vh + -110px); /*-10vh + -4vh + -120px + 10px*/
+	
 }
 /*title loading romyshlen*/
 #tlr-slate{
-	
+	margin-left: 50vw;
 }
 #tlrs-ml-top {
-	margin-top: calc(-70px - 10vh);
+	margin-top: -4vh;
 }
 #tlrs-ml-bot {
 	margin-top: calc(40px + 12vh);
@@ -183,16 +185,18 @@ html, body {
 	width: 12vh;
 	height: 12vh;
 	animation: rotate 20s infinite linear;
+	float: left;
+	margin-left: calc(-6vh + 2px);
 }
 #tlrs-label {
 	
 }
 #tlrs-desc {
-	margin-bottom: -4vh; /*calc(-14vh + -110px); -10vh + -4vh + -120px + 10px*/
+	
 }
 /*title arrow*/
 #title-arrow {
-	margin-top: 8vh;
+	margin-top: 30vh;
 }
 #tarrow-down {
 	opacity: 0;

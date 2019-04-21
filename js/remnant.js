@@ -73,10 +73,13 @@ function animTitlePage() {
 		tlrSlate.css('transform','translateX(10vw)');
 	},500);
 	//markerlines
-	setTimeout(function() {$('.markerline').css("opacity","1");},2000);
-	setTimeout(function() {$('.ml-label').css("opacity","1");},2000);
-	setTimeout(function() {$('.ml-desc').css("opacity","1");},2000);
-	
+	var vpWidth = $(document).width();
+	var basisWidth = $("#tlcs-desc").width();
+	if(vpWidth/basisWidth > 8.6) { 
+		setTimeout(function() {$('.markerline').css("opacity","1");},2000);
+		setTimeout(function() {$('.ml-label').css("opacity","1");},2000);
+		setTimeout(function() {$('.ml-desc').css("opacity","1");},2000);
+	}
 	//down arrow
 	setTimeout(function() {$('#tarrow-down').css("opacity","1");},3800);
 	setTimeout(function() {doTitlePanelInteract = true;},4500);
