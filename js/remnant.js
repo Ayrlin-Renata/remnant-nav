@@ -103,5 +103,6 @@ function animTypewriter(ele, newText, timeout, pad = false, origText = "", curch
 $('#title-panel').click(function() {
 	if(doTitlePanelInteract == false) 
 		return;
-	$('#scroller').css('transform','translateY(-100vh)');
+	//$('#scroller').css('transform','translateY(-100vh)');
+	window.scrollTo(0,$(window).height())
 });
