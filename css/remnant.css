@@ -70,35 +70,63 @@ h1 {
 	transition: opacity 2s ease;
 }
 
-.generic-title {
+.generic-title, .linkbox-title {
 	font-family: Palanquin, sans-serif;
 	color: #777777;
 	font-size: 4vh;
 }
-.generic-subtitle {
+.generic-subtitle, .linkbox-subtitle {
 	font-family: Dosis, sans-serif;
 	color: #666666;
 	font-size: 2vh;
+}
+.linkbox-title, .linkbox-subtitle {
+	color: #ffffff;
 }
 
 .linkbox {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	flex-basis: 100vh;
+	overflow: hidden;
+	background-attachment: fixed;
 }
 .linkbox-slate {
-	flex-grow: 1;
+	flex-basis: 33.33%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background-position: top left;
+	background-attachment: fixed;
+	transition: all 0.5s ease;
 }
-.linkbox-slate-background {
-	background-color: #000000;
-	opacity: 0.5;
-	height: 100%;
-	position: absolute;
+.linkbox-icon {
+	opacity: 1;
+	filter: invert(1);
+	width: 8vh;
+	height: 8vh;
+	margin-left: auto;
+	margin-right: auto;
+	transition: all 0.25s ease;
+	margin-top: -8vh;
+}
+.linkbox-mocircle {
+	width: 8vh;
+	height: 8vh;
+	-webkit-border-radius: 4vh;
+	background-color: #ffffff;
+	opacity: 0.0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -17vh; 
+	transition: all 0.25s ease;
 }
 
 .page-heading {
 	font-size: 5vh;
-	color: #777777;
+	color: #aaaaaa;
 	font-family: Palanquin, sans-serif;
 }
 
@@ -278,11 +306,27 @@ h1 {
 	background-color: #000000;
 	height: 100%;
 	margin-bottom: -90vh;
-}
-#msm-text {
-	color: #bbbbbb;
+	display: flex;
+	flex-direction: column;
 	padding-left: 7vw;
 	padding-right: 7vw;
+}
+#msm-text {
+	color: #dddddd;
 	padding-top: 1vh;
 	text-align: left;
+}
+#msm-linkbox {
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+}
+#msml-slate-lore {
+	background-image: url("../img/tsevaya-pravitiko-gray.png");
+}
+#msml-slate-tsevaya {
+	background-image: url("../img/tsevaya-pravitiko-blue.png");
+	
+}
+#msml-slate-cinder {
+	background-image: url("../img/tsevaya-pravitiko-red.png");
 }
