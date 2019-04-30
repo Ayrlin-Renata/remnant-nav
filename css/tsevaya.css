@@ -48,16 +48,6 @@
 	height: 90vh;
 	
 }
-#msm-background {
-	opacity: 0.6;
-	background-color: #000000;
-	height: 100%;
-	margin-bottom: -90vh;
-	display: flex;
-	flex-direction: column;
-	padding-left: 7vw;
-	padding-right: 7vw;
-}
 #msm-text {
 	color: #dddddd;
 	padding-top: 1vh;
@@ -111,19 +101,10 @@
 	margin-left: 4vw;
 	height: 8vh;
 }
-#tech-slate-main {
+#tech-slate-main, #politics-slate-main, #history-slate-main {
 	height: 90vh;
 }
 #tsm-background {
-	opacity: 0.6;
-	background-color: #000000;
-	height: 100%;
-	margin-bottom: -90vh;
-	display: flex;
-	flex-direction: column;
-	padding-left: 7vw;
-	padding-right: 7vw;
-	display: flex;
 	flex-direction: row;
 }
 #tsm-list {
@@ -131,4 +112,31 @@
 }
 #tsm-desc {
 	flex-basis: 50%;
+}
+#tsm-image-container img, #psm-image-container img {
+	height: 22vh;
+	width: auto;
+}
+
+/**/
+#politics-panel {
+	background-image: url('../img/darkgradientback-flipped.png');
+	padding-top: 0px;
+	height: 100vh;
+}
+#politics-title {
+	text-align: left;
+	margin-left: 4vw;
+	height: 8vh;
+}
+/**/
+#history-panel {
+	background-image: url('../img/darkgradientback.png');
+	padding-top: 0px;
+	height: 100vh;
+}
+#history-title {
+	text-align: left;
+	margin-left: 4vw;
+	height: 8vh;
 }

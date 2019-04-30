@@ -1,0 +1,44 @@
+/*title panel*/
+#title-panel {
+	background-image: url('../img/space.png');
+	padding-top: 8vh;
+	padding-left: 8vw;
+	padding-right: 8vw;
+}
+#title-text {
+	color: #ffffff;
+	font-size: 10vh;
+	font-family: 'Palanquin', sans-serif;
+}
+#title-subtext {
+	color: #ffffff;
+	margin-top: -1vh;
+	font-size: 4vh;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+/*title arrow*/
+#title-arrow {
+	margin-top: 60vh;
+	text-align: center;
+}
+#tarrow-down {
+	opacity: 0;
+	transition: opacity 2s ease-in;
+	animation: bounce 4s infinite linear;
+	filter: invert(1);
+	width: fit-content;
+}
+/*menu panel*/
+#menu-panel {
+	background-image: url('../img/darkgradientback.png');
+	text-align: center;
+	padding-top: 0px;
+}
+#menu-title {
+	text-align: left;
+	margin-left: 4vw;
+	height: 8vh;
+}
+#menu-slate-main {
+	height: 90vh;
+}
