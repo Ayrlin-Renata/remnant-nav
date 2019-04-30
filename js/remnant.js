@@ -3,8 +3,6 @@ var doTitlePanelInteract = false;
 
 $(document).ready(function() {
 	load();
-	initListeners();
-
 });
 
 function load() {
@@ -16,6 +14,7 @@ function load() {
 		loadImage("img/tsevaya-pravitiko-blue.png");
 		loadImage("img/tsevaya-pravitiko-red.png");
 	}, 5000);
+	initListeners();
 }
 
 function loadImage(url,primaryLoad = false) {
@@ -92,76 +91,11 @@ function animTitlePage() {
 	setTimeout(function() {doTitlePanelInteract = true;},4500);
 }
 
-function animTypewriter(ele, newText, timeout, pad = false, origText = "", curchar = 0) {
-	if(curchar == 0) 
-		origText = ele.textContent;
-	curchar++;
-	var untyped = newText.substr(0,curchar);
-	if(pad) 
-		untyped = untyped.padEnd(newText.length,origText);
-	ele.textContent = untyped;
-	if(curchar == newText.length) 
-		return;
-	setTimeout(animTypewriter, timeout, ele, newText, timeout, pad, origText, curchar);
-}
-
-function showLinkboxCircle(ele) {
-	var mocircle = $(ele.querySelector('.linkbox-mocircle'));
-	mocircle.css('opacity',0.5);
-	mocircle.css('height','20vh');
-	mocircle.css('width','20vh');
-	mocircle.css('margin-top','-23vh');
-	mocircle.css('-webkit-border-radius','10vh');
-	var icon = $(ele.querySelector('.linkbox-icon'));
-	icon.css('margin-top','0vh');
-}
-function hideLinkboxCircle(ele) {
-	var mocircle = $(ele.querySelector('.linkbox-mocircle'));
-	mocircle.css('opacity',0.0);
-	mocircle.css('height','8vh');
-	mocircle.css('width','8vh');
-	mocircle.css('margin-top','-17vh');
-	mocircle.css('-webkit-border-radius','4vh');
-	var icon = $(ele.querySelector('.linkbox-icon'));
-	icon.css('margin-top','-8vh');
-}
-
-function animLinkboxSlideOut(ele) {
-	var linkbox = $(ele.parentNode);
-	var style = ele.currentStyle || window.getComputedStyle(ele, false);
-	var url = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-	linkbox.css('background-image','url(' + url + ')');
-	var sliders = linkbox.children(':not(#' + ele.id + ')');
-	sliders.each(function() {
-		$(this).css('transform','translateY(100%)');
-	});
-}
-function animLinkboxSlideIn(ele) {
-	var linkbox = $(ele.parentNode);
-	var sliders = linkbox.children(':not(#' + ele.id + ')');
-	sliders.each(function() {
-		$(this).css('transform','translateY(0px)');
-	});
-}
-
 function initListeners() {
 	$('#title-panel').click(function() {
 		if(doTitlePanelInteract == false) 
 			return;
 		window.scrollTo(0,$(window).height())
 	});
-
-	$('.linkbox-slate').mouseenter(function() {
-		showLinkboxCircle(this);
-	}).mouseleave(function() {
-		hideLinkboxCircle(this);
-	});
-	
-	$('.linkbox-mocircle').mouseenter(function() {
-		if(this.style.opacity != 0)
-			animLinkboxSlideOut(this.parentNode);
-	}).mouseleave(function() {
-		animLinkboxSlideIn(this.parentNode);
-		//hideLinkboxCircle(this.parentNode);
-	});
+	initLinkboxListeners();
 }

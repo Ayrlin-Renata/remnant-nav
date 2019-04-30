@@ -1,0 +1,56 @@
+.linkbox-title, .linkbox-subtitle {
+	color: #ffffff;
+}
+
+.linkbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-basis: 100vh;
+	overflow: hidden;
+	background-attachment: fixed;
+	text-align: center;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+.linkbox-slate {
+	flex-basis: 33.33%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background-position: top left;
+	background-attachment: fixed;
+	transition: all 0.5s ease;
+}
+.linkbox-icon {
+	opacity: 1;
+	filter: invert(1);
+	width: 8vh;
+	height: 8vh;
+	margin-left: auto;
+	margin-right: auto;
+	transition: all 0.25s ease;
+	margin-top: -8vh;
+}
+.linkbox-mocircle {
+	width: 8vh;
+	height: 8vh;
+	-webkit-border-radius: 4vh;
+	background-color: #ffffff;
+	opacity: 0.0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -17vh; 
+	transition: all 0.25s ease;
+	color: #ffffff;
+	font-size: 0px;
+}
+
+.linklist {
+	
+}
+.linklist-option {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}

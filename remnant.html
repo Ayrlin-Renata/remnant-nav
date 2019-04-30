@@ -14,6 +14,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Dosis|Palanquin:100" rel="stylesheet">	
 
     <!-- CSS -->
+	<link href="css/basic.css" rel="stylesheet">
+	<link href="css/linkbox.css" rel="stylesheet">
 	<link href="css/remnant.css" rel="stylesheet">
 </head>
 <body>
@@ -25,21 +27,21 @@
 		<div id="title-text">.......</div>
 		<div id="title-subtext">&nbsp</div>
 		<div id="title-loading">
-			<div id="tlc-slate">
+			<div id="tlc-slate" class="title-slate">
 				<div id="tlcs-ml-top" class="markerline ml-top"></div>
 				<div id="tlcs-ml-bot" class="markerline ml-bot"></div>
 				<img id="tload-cinder" src="img/cinder.png">
 				<div id="tlcs-label" class="ml-label">cinder</div>
 				<div id="tlcs-desc" class="ml-desc">the derelict capitol</div>
 			</div>
-			<div id="tlv-slate">
+			<div id="tlv-slate" class="title-slate">
 				<div id="tlvs-ml-top" class="markerline ml-top"></div>
 				<div id="tlvs-ml-bot" class="markerline ml-bot"></div>
 				<img id="tload-vershenna" src="img/svg/vershenna.svg">
 				<div id="tlvs-label" class="ml-label">vershenna</div>
 				<div id="tlvs-desc" class="ml-desc">an unfinished paradise</div>
 			</div>
-			<div id="tlr-slate">
+			<div id="tlr-slate" class="title-slate">
 				<div id="tlrs-ml-top" class="markerline ml-top"></div>
 				<div id="tlrs-ml-bot" class="markerline ml-bot"></div>
 				<img id="tload-romyshlen" src="img/romyshlen.png">
@@ -52,10 +54,12 @@
 			<img id="tarrow-down" src="img/svg/downarrow.svg">
 		</div>
 	</div>
+	<script src="js/utils.js"></script>
+	<script src="js/linkbox.js"></script>
 	<script src="js/remnant.js"></script>
 	<div id="menu-panel" class="rpanel">
 		<div id="menu-title">
-			<div id="mt-text" class="page-heading">> Introduction</div>
+			<div id="mt-text" class="page-heading unselectable">> Introduction</div>
 		</div>
 		<div id="menu-slate-main">
 			<div id="msm-background">
@@ -63,24 +67,24 @@
 					<h1>heading</h1>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu sapien quis mauris condimentum aliquam in in nisi. Nam mauris urna, aliquam id neque pulvinar, auctor tempor nulla. Suspendisse nunc neque, condimentum non quam in, accumsan cursus diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec auctor quis mi ut tincidunt. Curabitur id nibh ac risus ultrices blandit. Curabitur pulvinar eleifend ullamcorper. Nullam facilisis, sapien sed rutrum blandit, augue dui imperdiet nunc, non feugiat lorem turpis suscipit quam. Nam ut felis accumsan mauris faucibus consequat a ut dolor. Nam vehicula convallis vestibulum. Nam mollis dui vel egestas vulputate. Proin fringilla tempus velit, in maximus dui hendrerit in. Donec et semper justo. Morbi vitae facilisis odio. Integer congue, massa ut tincidunt egestas, neque ipsum sagittis orci, vitae varius mauris elit ac dui.
 				</div>
-				<div id="msm-linkbox" class="linkbox">
+				<div id="msm-linkbox" class="linkbox unselectable">
 					<div id="msml-slate-lore" class="linkbox-slate">
 						<img id="msml-sl-img" class="linkbox-icon" src="img/romyshlen.png">
 						<div id="msml-sl-title" class="linkbox-title">lore</div>
 						<div id="msml-sl-subtitle" class="linkbox-subtitle">short description</div>
-						<div id="msml-sl-mocircle" class="linkbox-mocircle"></div>
+						<div id="msml-sl-mocircle" class="linkbox-mocircle">lore.html</div>
 					</div>
 					<div id="msml-slate-tsevaya" class="linkbox-slate">
 						<img id="msml-st-img" class="linkbox-icon" src="img/svg/vershenna.svg">
 						<div id="msml-st-title" class="linkbox-title">tsevaya</div>
 						<div id="msml-st-subtitle" class="linkbox-subtitle">short description</div>
-						<div id="msml-st-mocircle" class="linkbox-mocircle"></div>
+						<div id="msml-st-mocircle" class="linkbox-mocircle">tsevaya.html</div>
 					</div>
 					<div id="msml-slate-cinder" class="linkbox-slate">
 						<img id="msml-sc-img" class="linkbox-icon" src="img/cinder.png">
 						<div id="msml-sc-title" class="linkbox-title">cinder</div>
 						<div id="msml-sc-subtitle" class="linkbox-subtitle">short description</div>
-						<div id="msml-sc-mocircle" class="linkbox-mocircle"></div>
+						<div id="msml-sc-mocircle" class="linkbox-mocircle">cinder.html</div>
 					</div>
 				</div>
 			</div>

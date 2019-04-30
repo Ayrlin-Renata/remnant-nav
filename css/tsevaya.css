@@ -1,0 +1,134 @@
+
+/*title panel*/
+#title-panel {
+	background-image: url('../img/tsevaya-pravitiko-blue.png');
+	padding-top: 8vh;
+	padding-left: 8vw;
+	padding-right: 8vw;
+}
+#title-text {
+	color: #ffffff;
+	font-size: 10vh;
+	font-family: 'Palanquin', sans-serif;
+}
+#title-subtext {
+	color: #ffffff;
+	margin-top: -1vh;
+	font-size: 4vh;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+/*title arrow*/
+#title-arrow {
+	margin-top: 60vh;
+	text-align: center;
+}
+#tarrow-down {
+	opacity: 0;
+	transition: opacity 2s ease-in;
+	animation: bounce 4s infinite linear;
+	filter: invert(1);
+	width: fit-content;
+}
+
+/*menu panel*/
+#menu-panel {
+	background-image: url('../img/darkgradientback.png');
+	text-align: center;
+	padding-top: 0px;
+}
+#menu-title {
+	text-align: left;
+	margin-left: 4vw;
+	height: 8vh;
+}
+#mt-text {
+	
+}
+#menu-slate-main {
+	height: 90vh;
+	
+}
+#msm-background {
+	opacity: 0.6;
+	background-color: #000000;
+	height: 100%;
+	margin-bottom: -90vh;
+	display: flex;
+	flex-direction: column;
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+#msm-text {
+	color: #dddddd;
+	padding-top: 1vh;
+	text-align: left;
+}
+#msm-linkbox {
+	width: 60vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+#msml-slate-lore {
+	background-image: url("../img/tsevaya-pravitiko-gray.png");
+}
+#msml-slate-tsevaya {
+	background-image: url("../img/tsevaya-pravitiko-blue.png");
+	
+}
+#msml-slate-cinder {
+	background-image: url("../img/tsevaya-pravitiko-red.png");
+}
+
+/*map panel*/
+#map-panel {
+	background-image: url('../img/darkgradientback-flipped.png');
+	padding-top: 0px;
+}
+#map-title {
+	text-align: left;
+	margin-left: 4vw;
+	height: 8vh;
+}
+#map-slate-main {
+	background-color: rgba(0,0,0,0.5);
+	margin-top: 2vh;
+	
+}
+#map-img {
+	width: 90vw;
+	height: auto;
+	margin-right: 5vw;
+	margin-left: 5vw;
+}
+
+/*tech panel*/
+#tech-panel {
+	background-image: url('../img/darkgradientback.png');
+	padding-top: 0px;
+}
+#tech-title {
+	text-align: left;
+	margin-left: 4vw;
+	height: 8vh;
+}
+#tech-slate-main {
+	height: 90vh;
+}
+#tsm-background {
+	opacity: 0.6;
+	background-color: #000000;
+	height: 100%;
+	margin-bottom: -90vh;
+	display: flex;
+	flex-direction: column;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	display: flex;
+	flex-direction: row;
+}
+#tsm-list {
+	flex-basis: 50%;
+}
+#tsm-desc {
+	flex-basis: 50%;
+}
